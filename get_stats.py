@@ -215,7 +215,7 @@ class CatanStats():
 
 def upload_s3(file):
 
-    session = boto3.session.Session(profile_name='alenning')
+    session = boto3.session.Session(profile_name='default')
     s3_client = session.client('s3')
 
     try:
